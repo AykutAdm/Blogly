@@ -36,7 +36,9 @@ ASP.Net Core 5.0 ile Entity Framework Core, N Tier Architechture mimarisini API'
 
 ## 📸 Ekran Görüntüleri
 
+---
 ### 1- 👤 Kullanıcı Paneli
+
 
 ![Kullanıcı Paneli - 1](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/Blogly1.png?raw=true)
 ![Kullanıcı Paneli - 2](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/Blogly2.png?raw=true)
@@ -44,7 +46,9 @@ ASP.Net Core 5.0 ile Entity Framework Core, N Tier Architechture mimarisini API'
 ![Kullanıcı Paneli - 4](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/Blogly4.png?raw=true)
 ![Kullanıcı Paneli - 5](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/Blogly5.png?raw=true)
 
+
 ---
+
 
 ### 2- ✍️ Yazar Paneli
 ![Yazar Paneli - 1](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/Blogly6.png?raw=true)
@@ -54,7 +58,9 @@ ASP.Net Core 5.0 ile Entity Framework Core, N Tier Architechture mimarisini API'
 ![Yazar Paneli - 5](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/Blogly10.png?raw=true)
 ![Yazar Paneli - 6](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/blogly11.png?raw=true)
 
+
 ---
+
 
 ### 3- 🛠️ Admin Paneli
 ![Admin Paneli - 1](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/Blogly12.png?raw=true)
@@ -66,11 +72,15 @@ ASP.Net Core 5.0 ile Entity Framework Core, N Tier Architechture mimarisini API'
 ![Admin Paneli - 7](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/Blogly18.png?raw=true)
 ![Admin Paneli - 8](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/Blogly19.png?raw=true)
 
+
 ---
+
 
 ### ❗ Hata Sayfaları (Error Pages)
 ![404 Not Found](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/Blogly20.png?raw=true)
 ![Access Denied / Error](https://github.com/AykutAdm/Blogly/blob/master/ReadMeImages/Blogly21.png?raw=true)
+
+---
 
 
 
