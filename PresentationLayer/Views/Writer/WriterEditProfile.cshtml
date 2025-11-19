@@ -1,0 +1,56 @@
+﻿@model UserUpdateViewModel
+@{
+    ViewData["Title"] = "WriterEditProfile";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yazar Profil Bilgileri Düzenleme</h4>
+            <br />
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label for="exampleInputName2">Yazar Ad Soyad</label>
+                    <input type="text" class="form-control" asp-for="@Model.namesurname" placeholder="Adınız Soyadınız">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Kullanıcı Adı</label>
+                    <input type="text" class="form-control" id="exampleInputName3" asp-for="@Model.username" placeholder="Kullanıcı Adınız">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Mail Adresi</label>
+                    <input type="email" class="form-control" id="exampleInputEmail3" asp-for="@Model.mail" placeholder="Mail Adresiniz">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Resim Yolu</label>
+                    <input type="text" class="form-control" id="exampleInputName4" asp-for="@Model.imageurl" placeholder="Resim Yolu">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Şifre</label>
+                    <input type="password" class="form-control" id="exampleInputPassword4" asp-for="@Model.password" placeholder="Şifreniz">
+                </div>
+                @* <div class="form-group">
+                        <label>Yazar Görseli</label>
+                        <input type="file" name="img[]" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                            <input type="text" class="form-control file-upload-info" disabled placeholder="Resim">
+                            <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-gradient-primary" type="button">Resim Ekle</button>
+                            </span>
+                        </div>
+                    </div> *@
+                @*  <div class="form-group">
+                        <label for="exampleTextarea1">Yazar Hakkında</label>
+                        <textarea class="form-control" asp-for="WriterAbout" id="exampleTextarea1" rows="10"></textarea>
+                    </div> *@
+                <button type="submit" class="btn btn-gradient-primary mr-2">Güncelle</button>
+                <button class="btn btn-light" href="/Writer/WriterEditProfile/">İptal</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

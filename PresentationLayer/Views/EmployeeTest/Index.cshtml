@@ -1,0 +1,28 @@
+﻿@using PresentationLayer.Controllers
+@model List<Class1>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Index</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Adı Soyadı</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.EmployeeId</th>
+            <td>@item.EmployeeName</td>
+            <td><a href="/EmployeeTest/DeleteEmployee/@item.EmployeeId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/EmployeeTest/EditEmployee/@item.EmployeeId" class="btn btn-success">Düzenle</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/EmployeeTest/AddEmployee/" class="btn btn-primary">Yeni Çalışan Girişi</a>

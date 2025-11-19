@@ -1,0 +1,49 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.Category>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Kategori Listesi</h1>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Kategori Adı</th>
+        <th>Pasif Yap</th>
+        <th>Aktif Yap</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.CategoryId</th>
+            <td><span class="badge badge-light">@item.CategoryName</span></td>
+            <td><a href="/Admin/Category/CategoryDelete/@item.CategoryId/" id="DeleteBtn" onclick="return confirm('Silmek istediğinize emin misiniz!');" class="btn btn-danger">Pasif Yap</a></td>
+            <td><a href="#" class="btn btn-success">Aktif Yap</a></td>
+            <td><a href="#" class="btn btn-warning">Düzenle</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/Admin/Category/AddCategory/" class="btn btn-primary">Yeni Kategori Ekle</a>
+<br />
+@* <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }))
+</div> *@
+
+<div class="d-flex justify-content-end mt-3">
+    @Html.PagedListPager(
+    (IPagedList)Model,
+        page => Url.Action("Index", new { page }),
+        new X.PagedList.Web.Common.PagedListRenderOptions
+        {
+            UlElementClasses = new[] { "pagination", "pagination-sm", "mb-0" },
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link" },
+            ActiveLiElementClass = "active"
+        }
+        )
+</div>
